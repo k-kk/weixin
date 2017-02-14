@@ -1,0 +1,19 @@
+<view class="container">
+  <image class="head_image" src="/images/post/sls.jpg"></image>
+  <image class="audio" src="/images/music/music-start.png"></image>
+  <view class="author-date">
+    <image class="avatar" src="/images/avatar/2.png"></image>
+    <text class="author">胡歌</text>
+    <text class="cons-text">发表于</text>
+    <text class="date">3天前</text>
+  </view>
+  <text class="title">好玩好好娃娃</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="/images/icon/collection.png"></image>
+      <image class="share-img"src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">安东卫看风景哦我积分我if就抛弃我假发票从未分配我今儿发觉我覅叫我去额放进去我佩服就顽皮我碰见废弃物if叫我起积分【外婆而服务女菀发我</text>
+</view>

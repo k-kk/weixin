@@ -3,13 +3,13 @@ import postsDate from "../../data/post_data.js";
 // const postsDate = require('../../data/post_data.js');
 
 Page({
-  data:{
+  data: {
     // 小程序会读取data对象来做数据绑定，，这个动作我们称呼为为动作A
     // 而这个动作A的执行，是在onLoad事件执行后执行
     title: '撒大声地撒旦',
     isVertical: true
   },
-  onLoad: function () {
+  onLoad: function() {
     // 生命周期函数--监听页面加载
 
     this.setData({
@@ -21,15 +21,15 @@ Page({
     // 生命周期函数--监听页面初次渲染完成
     // String3
   },
-  onShow:function(){
+  onShow: function() {
     // 生命周期函数--监听页面显示
     // String4
   },
-  onHide:function(){
+  onHide: function() {
     // 生命周期函数--监听页面隐藏
     // String5
   },
-  onUnload:function(){
+  onUnload: function() {
     // 生命周期函数--监听页面卸载
     // String6
   },
@@ -47,6 +47,15 @@ Page({
       title: 'title', // 分享标题
       desc: 'desc', // 分享描述
       path: 'path' // 分享路径
-    }
+    };
+  },
+  onPostTap: (evevt) => {
+
+    let postId = evevt.currentTarget.dataset.postid
+
+    wx.navigateTo({
+        url: `details/details?id=${postId}`
+    });
+
   }
-})
+});
